@@ -10,12 +10,7 @@ import styles from './Form.module.scss';
 import { IForm } from './form.interface';
 
 const Form: FC = () => {
-	const {
-		register,
-		handleSubmit,
-		reset,
-		formState: { errors },
-	} = useForm<IForm>({
+	const { register, handleSubmit, reset } = useForm<IForm>({
 		mode: 'onSubmit',
 	});
 
