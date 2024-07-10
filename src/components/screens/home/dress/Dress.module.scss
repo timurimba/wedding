@@ -1,0 +1,13 @@
+.dress {
+	@apply text-center mt-20 pb-20;
+	> p {
+		@apply text-[#5D5D5D] text-sm my-8;
+	}
+	> div {
+		@apply grid grid-cols-3 mx-auto gap-5 max-w-[250px];
+		> div {
+			@apply w-[70px] h-[70px] rounded-full;
+			box-shadow: 0 4px 4px 0 rgb(#000, 25%);
+		}
+	}
+}

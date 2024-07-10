@@ -1,0 +1,17 @@
+.radio {
+	@apply flex cursor-pointer items-center gap-x-3;
+	> input {
+		@apply hidden;
+	}
+	> input:checked + div::before {
+		@apply opacity-100;
+	}
+	> div {
+		@apply w-[30px] h-[30px] rounded-full border border-solid border-black relative;
+		&::before {
+			content: '';
+			@apply block w-[14px] h-[14px] transition-opacity duration-500 opacity-0 bg-black
+					rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+		}
+	}
+}

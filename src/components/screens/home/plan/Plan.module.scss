@@ -1,0 +1,19 @@
+.plan {
+	@apply py-[60px] bg-[#DFEAF9] text-center;
+	> div {
+		@apply grid grid-cols-2 mt-5 grid-rows-5 bg-no-repeat;
+		background-image: url('../../../../assets/images/heart.svg');
+		background-size: 25px;
+		background-position: center 17px;
+	}
+}
+
+.item {
+	@apply flex flex-col items-center;
+	> time {
+		@apply text-[40px];
+	}
+	> span {
+		@apply font-light text-sm block mt-2;
+	}
+}

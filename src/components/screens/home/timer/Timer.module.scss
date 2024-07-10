@@ -1,0 +1,21 @@
+.timer {
+	@apply py-[50px]  bg-[#DFEAF9];
+	> h5 {
+		@apply font-miama text-xl text-center block mb-7;
+	}
+	> p {
+		@apply font-miama text-2xl text-center;
+	}
+	> div {
+		@apply flex justify-center gap-x-10;
+		> div {
+			@apply flex relative flex-col items-center;
+			> time {
+				@apply font-miama text-[32px] block;
+			}
+			> span {
+				@apply text-xs uppercase;
+			}
+		}
+	}
+}

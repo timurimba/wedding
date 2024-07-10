@@ -1,0 +1,21 @@
+.welcome {
+	@apply pt-5 pb-[90px] text-center;
+	> h3 {
+		@apply font-miama text-2xl;
+	}
+	> p {
+		@apply text-[#5D5D5D] text-sm font-light;
+		&:nth-child(2) {
+			@apply my-6;
+		}
+	}
+	> strong {
+		@apply font-miama text-[44px] mb-5 block;
+		color: #000;
+		text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+	}
+}

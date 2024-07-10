@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Helvetica Oblique';
+	font-weight: 400;
+	src:
+		url('assets/fonts/Helvetica.woff2') format('woff2'),
+		url('assets/fonts/Helvetica.woff') format('woff'),
+		url('assets/fonts/Helvetica.eot') format('eot'),
+		url('assets/fonts/Helvetica.ttf') format('ttf'),
+		url('assets/fonts/Helvetica.otf') format('otf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Helvetica Oblique';
+	font-weight: 300;
+	src:
+		url('assets/fonts/Helvetica Light.woff2') format('woff2'),
+		url('assets/fonts/Helvetica Light.woff') format('woff'),
+		url('assets/fonts/Helvetica Light.eot') format('eot'),
+		url('assets/fonts/Helvetica Light.ttf') format('ttf'),
+		url('assets/fonts/Helvetica Light.otf') format('otf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Vasek';
+	font-weight: 400;
+	src:
+		url('assets/fonts/Vasek.woff2') format('woff2'),
+		url('assets/fonts/Vasek.woff') format('woff'),
+		url('assets/fonts/Vasek.eot') format('eot'),
+		url('assets/fonts/Vasek.ttf') format('ttf'),
+		url('assets/fonts/Vasek.otf') format('otf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Miama Nueva';
+	font-weight: 500;
+	src:
+		url('assets/fonts/Miama Nueva.woff2') format('woff2'),
+		url('assets/fonts/Miama Nueva.woff') format('woff'),
+		url('assets/fonts/Miama Nueva.eot') format('eot'),
+		url('assets/fonts/Miama Nueva.ttf') format('ttf'),
+		url('assets/fonts/Miama Nueva.otf') format('otf');
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	position: relative;
+	font-family: 'Helvetica Oblique', sans-serif;
+	min-height: 100vh;
+	overflow-x: hidden;
+
+	user-select: none;
+}
+
+img {
+	pointer-events: none;
+}
+
+.container {
+	max-width: 390px;
+	margin: 0 auto;
+}
